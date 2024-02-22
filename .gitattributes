@@ -1,0 +1,2 @@
+brpc/lib/libbrpc.a filter=lfs diff=lfs merge=lfs -text
+folly/lib/libfolly.a filter=lfs diff=lfs merge=lfs -text

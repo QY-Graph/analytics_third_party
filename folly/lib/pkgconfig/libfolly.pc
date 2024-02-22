@@ -1,0 +1,11 @@
+prefix=/raid/ljx/include/folly
+exec_prefix=/raid/ljx/include/folly
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libfolly
+Description: Facebook (Folly) C++ library
+Version: 0.58.0-dev
+Cflags: -I${includedir}  -pthread  -std=gnu++1z -DFMT_LOCALE -DBOOST_ALL_NO_LIB -DGFLAGS_IS_A_DLL=0 -I/raid/ljx/include/boost/include -I/raid/ljx/include/double-conversion/include -I/raid/ljx/include/gflags/include -I/raid/ljx/include/glog/include -I/raid/ljx/include/libevent/include -I/usr/include -I/usr/local/include
+Libs: -L${libdir} -lfolly
+Libs.private: /raid/ljx/include/double-conversion/lib/libdouble-conversion.a /raid/ljx/include/glog/lib/libglog.a /raid/ljx/include/libevent/lib/libevent.a /usr/lib/x86_64-linux-gnu/libssl.a /usr/lib/x86_64-linux-gnu/libcrypto.a -pthread -ldl -ldl /usr/lib/x86_64-linux-gnu/liblzma.a /usr/local/lib/libunwind.so /usr/lib/x86_64-linux-gnu/libaio.so
